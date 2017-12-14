@@ -1,0 +1,44 @@
+{
+	"id": "P7X8-EU",
+	"name": {
+		"en": "Samsung Z-wave Locks"
+	},
+	"zwave": {
+		"manufacturerId": [0],
+		"productTypeId": [3],
+		"productId": [1],
+		"learnmode": {
+			"image": "/drivers/P7X8-EU/assets/learnmode.svg",
+			"instruction": {
+				"en": "Note : This is for EU frequency Samsung P7X8 series only. Triple click on the button on the Z-Wave chip located below the battery compartment."
+			}
+		},
+		"unlearnmode": {
+			"image": "/drivers/P7X8-EU/assets/learnmode.svg",
+			"instruction": {
+				"en": "Note : This is for EU frequency Samsung P7X8 series only. Triple click on the button on the Z-Wave chip located below the battery compartment."
+			}
+		},
+		"associationGroups": [
+			1
+		],
+		"associationGroupsOptions": {
+			"1": {
+				"hint": {
+					"en": "Lifeline Group"
+				}
+			}
+		}
+	},
+	"class": "lock",
+	"capabilities": [
+		"locked"
+	],
+	"icon": "/drivers/P7X8-EU/assets/icon.svg",
+	"images": {
+		"large": "/drivers/P7X8-EU/assets/images/large.jpg",
+		"small": "/drivers/P7X8-EU/assets/images/small.jpg"
+	},
+	"settings": [
+	]
+}
