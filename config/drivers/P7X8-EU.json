@@ -4,7 +4,7 @@
 		"en": "Samsung Z-wave Locks"
 	},
 	"zwave": {
-		"manufacturerId": [0],
+		"manufacturerId": [0,815],
 		"productTypeId": [3],
 		"productId": [1],
 		"learnmode": {
