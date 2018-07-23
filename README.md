@@ -1,7 +1,7 @@
 # Samsung Z-Wave Locks
 This app adds support for Z-wave devices made by [Samsung](https://www.samsungsds-nss.com/).  
 <a href="https://github.com/AutomateAsia/com.samsung.lock">
-  <img src="https://raw.githubusercontent.com/AutomateAsia/com.samsung.lock/master/assets/images/small.jpg">
+  <img src="https://raw.githubusercontent.com/AutomateAsia/com.samsung.lock/master/drivers/P7X8-EU/assets/images/large.jpg">
 </a>  
 
 Please note that since this app is out of beta, users will have to re-include your Samsung Lock to use the new functionalities
