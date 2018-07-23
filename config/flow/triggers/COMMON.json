@@ -1,0 +1,79 @@
+[
+  {
+    "id": "homey_unlocked",
+    "title": {
+      "en": "Unlocked by Z-Wave"
+    },
+    "args": [
+      {
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=P7X8-EU"
+      }
+    ]
+  },
+  {
+    "id": "manual_unlocked",
+    "title": {
+      "en": "Unlocked from back"
+    },
+    "args": [
+      {
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=P7X8-EU"
+      }
+    ]
+  },
+  {
+    "id": "touchpad_unlocked",
+    "title": {
+      "en": "Unlocked by touchpad"
+    },
+    "args": [
+      {
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=P7X8-EU"
+      }
+    ]
+  },
+  {
+    "id": "finger_unlocked",
+    "title": {
+      "en": "Unlocked by fingerprint"
+    },
+    "args": [
+      {
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=P7X8-EU"
+      }
+    ]
+  },
+  {
+    "id": "card_unlocked",
+    "title": {
+      "en": "Unlocked by card"
+    },
+    "tokens": [
+					{
+						"name": "cardid",
+            "type": "number",
+						"title": {
+							"en": "Card Number"
+						},
+						"example": {
+							"en": "1"
+						}
+					}
+				],
+    "args": [
+      {
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=P7X8-EU"
+      }
+    ]
+  }
+]

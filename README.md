@@ -20,6 +20,13 @@ This app adds support for Z-wave devices made by [Samsung](https://www.samsungsd
 
 **Note:** Product Identification numbers have been added based on available information, but is still incomplete.
 
+## Flow cards support following triggers:
+1. Lock/Unlock status
+2. Unlocked by fingerprint
+3. Unlocked by touchpad
+4. Unlocked from back
+5. Unlocked by card (by card number 1-20)
+
 ## Future developments :
 ### Samsung
 * Samsung SHP-DP728 (KR), SHP-DP525 (KR)
@@ -40,6 +47,9 @@ If you like the app, consider a donation to support development
 
 ## Changelog:     
 
+### v1.0.0
+* App store stable release
+* Added flow cards
 
 ### v0.9.0
 * App store beta release   
