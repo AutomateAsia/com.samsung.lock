@@ -4,6 +4,8 @@ This app adds support for Z-wave devices made by [Samsung](https://www.samsungsd
   <img src="https://raw.githubusercontent.com/AutomateAsia/com.samsung.lock/master/assets/images/small.jpg">
 </a>  
 
+Please note that since this app is out of beta, users will have to re-include your Samsung Lock to use the new functionalities
+
 ## Links:
 [Samsung Locks Athom apps](https://apps.athom.com/app/com.samsung.lock)                    
 [MCOHome app Github repository](https://github.com/AutomateAsia/com.samsung.lock)   
