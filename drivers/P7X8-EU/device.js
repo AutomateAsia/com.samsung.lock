@@ -30,14 +30,12 @@ class P7X8EU extends ZwaveDevice {
 
 		// register capabilities for this device
 		this.registerCapability('locked', 'DOOR_LOCK',{
+			get: 'DOOR_LOCK_OPERATION_GET',
 			getOpts: {
 				getOnStart : true,
-				pollInterval : 300000
 			},
-			report: 'DOOR_LOCK_REPORT',
+			report: 'DOOR_LOCK_OPERATION_REPORT',
 			reportParser(report) {
-				console.log('===Door Lock Operation===');
-				console.log(report);
 				return report['Door Lock Mode'] === 'Door Secured';
 			}
 		});
@@ -52,25 +50,25 @@ class P7X8EU extends ZwaveDevice {
 						//open from back
 						if (report['Alarm Level'] == '176'){
 							manual_unlocked.trigger(this, null, null);
-							return report['Door Lock Mode'] === 'Door Unsecured';
+							return false;
 						}
 
 						//open from front
 						if (report['Alarm Level'] == '0'){
 							touchpad_unlocked.trigger(this, null, null);
-							return report['Door Lock Mode'] === 'Door Unsecured';
+							return false;
 						}
 
 						//open from hub
 						if (report['Alarm Level'] == '96'){
 							homey_unlocked.trigger(this, null, null);
-							return report['Door Lock Mode'] === 'Door Unsecured';
+							return false;
 						}
 
 						//open from fingerprint
 						if (report['Alarm Level'] == '80'){
 							finger_unlocked.trigger(this, null, null);
-							return report['Door Lock Mode'] === 'Door Unsecured';
+							return false;
 						}
 
 						//open from card
@@ -80,7 +78,7 @@ class P7X8EU extends ZwaveDevice {
 								"cardid": report['Alarm Level']
 							}
 							card_unlocked.trigger(this, tokens, null);
-							return report['Door Lock Mode'] === 'Door Unsecured';
+							return false;
 						}
 					}
 				}

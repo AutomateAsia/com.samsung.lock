@@ -4,7 +4,7 @@
   "name": {
     "en": "Samsung Z-wave Locks"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": ">=1.5.2",
   "author": {
     "name": "Mike Lim",
