@@ -34,6 +34,18 @@ class P7X8EU extends ZwaveDevice {
 			getOpts: {
 				getOnStart : true,
 			},
+			set: 'DOOR_LOCK_OPERATION_SET',
+			setParserV2: value => {
+				if (this.getCapabilityValue('locked') === value){
+					// The registerCapability using NOTIFICATION seems to cause a repeated lock/unlock command.
+					// This condition is to prevent the repeated lock command from firing
+					return null;
+				}else{
+					return {
+						'Door Lock Mode': (!value) ? 'Door Unsecured' : 'Door Secured',
+					};
+				}
+			},
 			report: 'DOOR_LOCK_OPERATION_REPORT',
 			reportParser(report) {
 				return report['Door Lock Mode'] === 'Door Secured';
@@ -44,7 +56,7 @@ class P7X8EU extends ZwaveDevice {
 		this.registerCapability('locked', 'ALARM', {
 			report: 'ALARM_REPORT',
 			reportParser(report) {
-				if (report.hasOwnProperty("Alarm Type")) {
+				if (report.hasOwnProperty("Alarm Type") && (this.getCapabilityValue('locked') === true)) {
 					if (report['Alarm Type'] == '6' && report.hasOwnProperty("Alarm Level")) {
 
 						//open from back
