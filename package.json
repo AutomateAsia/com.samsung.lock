@@ -6,7 +6,8 @@
 	"requires": true,
 	"dependencies": {
 		"homey-log": "^1.0.1",
-		"homey-meshdriver": "^1.2.4"
+		"homey-meshdriver": "^1.2.4",
+		"homey-zwavedriver": "^2.1.6"
 	},
 	"devDependencies": {},
 	"scripts": {

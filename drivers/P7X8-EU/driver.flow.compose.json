@@ -1,0 +1,58 @@
+{
+  "triggers": [
+    {
+      "id": "homey_unlocked",
+      "title": {
+        "en": "Unlocked by Z-Wave"
+      },
+      "args": []
+    },
+    {
+      "id": "homey_locked",
+      "title": {
+        "en": "Locked by Z-Wave"
+      },
+      "args": []
+    },
+    {
+      "id": "manual_unlocked",
+      "title": {
+        "en": "Unlocked from back"
+      },
+      "args": []
+    },
+    {
+      "id": "touchpad_unlocked",
+      "title": {
+        "en": "Unlocked by touchpad"
+      },
+      "args": []
+    },
+    {
+      "id": "finger_unlocked",
+      "title": {
+        "en": "Unlocked by fingerprint"
+      },
+      "args": []
+    },
+    {
+      "id": "card_unlocked",
+      "title": {
+        "en": "Unlocked by card"
+      },
+      "tokens": [
+        {
+          "name": "cardid",
+          "type": "number",
+          "title": {
+            "en": "Card Number"
+          },
+          "example": {
+            "en": "1"
+          }
+        }
+      ],
+      "args": []
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 'use strict';
 
 const Homey = require('homey');
-const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
+const { ZwaveDevice } = require('homey-zwavedriver');
 
 class P7X8EU extends ZwaveDevice {
-	onMeshInit() {
+	async onNodeInit() {
 
 		// enable debugging
 		this.enableDebug();
@@ -13,20 +13,11 @@ class P7X8EU extends ZwaveDevice {
 		this.printNode();
 
 
-		let homey_unlocked = new Homey.FlowCardTriggerDevice('homey_unlocked');
-		homey_unlocked.register();
-
-		let touchpad_unlocked = new Homey.FlowCardTriggerDevice('touchpad_unlocked');
-		touchpad_unlocked.register();
-
-		let manual_unlocked = new Homey.FlowCardTriggerDevice('manual_unlocked');
-		manual_unlocked.register();
-
-		let finger_unlocked = new Homey.FlowCardTriggerDevice('finger_unlocked');
-		finger_unlocked.register();
-
-		let card_unlocked = new Homey.FlowCardTriggerDevice('card_unlocked');
-		card_unlocked.register();
+		let homey_unlocked = this.homey.flow.getDeviceTriggerCard('homey_unlocked');
+		let touchpad_unlocked = this.homey.flow.getDeviceTriggerCard('touchpad_unlocked');
+		let manual_unlocked = this.homey.flow.getDeviceTriggerCard('manual_unlocked');
+		let finger_unlocked = this.homey.flow.getDeviceTriggerCard('finger_unlocked');
+		let card_unlocked = this.homey.flow.getDeviceTriggerCard('card_unlocked');
 
 		// register capabilities for this device
 		this.registerCapability('locked', 'DOOR_LOCK',{
