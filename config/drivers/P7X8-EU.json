@@ -7,6 +7,7 @@
 		"manufacturerId": [0,815],
 		"productTypeId": [3],
 		"productId": [1],
+		"requireSecure":true,
 		"learnmode": {
 			"image": "/drivers/P7X8-EU/assets/learnmode.svg",
 			"instruction": {
