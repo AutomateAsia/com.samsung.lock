@@ -1,0 +1,36 @@
+{
+  "id": "com.samsung.lock",
+  "sdk": 3,
+  "name": {
+    "en": "Samsung Z-Wave Locks"
+  },
+  "version": "2.0.1",
+  "compatibility": ">=5.0.0",
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "z-wave"
+  ],
+  "author": {
+    "name": "Mike Lim",
+    "email": "mike.lim@automate.asia"
+  },
+  "description": {
+    "en": "Adds support for Samsung Z-wave enabled locks"
+  },
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "category": [
+    "security"
+  ],
+  "tags": {
+    "en": [
+      "door lock",
+      "Samsung",
+      "Z-wave"
+    ]
+  }
+}

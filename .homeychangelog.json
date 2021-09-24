@@ -4,5 +4,8 @@
   },
   "1.0.3": {
     "en": "Ignored repeated notification from the lock"
+  },
+  "2.0.1": {
+    "en": "Updated Z-Wave Driver, Added more lock support"
   }
 }
