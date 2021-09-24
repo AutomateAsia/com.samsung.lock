@@ -4,11 +4,12 @@
   "name": {
     "en": "Samsung Z-Wave Locks"
   },
-  "version": "2.0.1",
+  "version": "2.0.2",
   "compatibility": ">=5.0.0",
   "platforms": [
     "local"
   ],
+  "brandColor": "#034EA2",
   "connectivity": [
     "z-wave"
   ],

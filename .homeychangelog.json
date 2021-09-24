@@ -7,5 +7,8 @@
   },
   "2.0.1": {
     "en": "Updated Z-Wave Driver, Added more lock support"
+  },
+  "2.0.2": {
+    "en": "Update to SDK3"
   }
 }
